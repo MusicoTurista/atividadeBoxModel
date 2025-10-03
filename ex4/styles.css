@@ -4,12 +4,25 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     padding: 20px;
+    background: #fff;
 }
 
 .card {
     text-align: center;
     border: 2px solid #ccc;
-    border-radius: 8px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.card-header {
+    font-weight: bold;
+    padding: 8px;
+    font-size: 16px;
+    
+}
+
+.card-content {
     padding: 15px;
 }
 
@@ -18,14 +31,21 @@ body {
     color: #00bcd4;
 }
 
+.blue .card-header {
+    background: #e0f7fa;
+    color: #00bcd4;
+    border-bottom: 2px solid #00bcd4;
+}
+
 .orange {
     border-color: #ff9800;
     color: #ff9800;
 }
 
-.card h3 {
-    margin: 0;
-    font-size: 18px;
+.orange .card-header {
+    background: #fff3e0;
+    color: #ff9800;
+    border-bottom: 2px solid #ff9800;
 }
 
 .card img {
